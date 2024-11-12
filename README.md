@@ -1,46 +1,98 @@
-# Getting Started with Create React App
+# Floor Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a floor management application built with React. It allows users to manage tables and floor layouts using drag-and-drop functionality. The application utilizes various libraries and tools to provide a smooth user experience.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Validating the Use of Chosen Libraries and Tools](#validating-the-use-of-chosen-libraries-and-tools)
+- [Technologies Used](#technologies-used)
+- [Scripts](#scripts)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To get started with the application, follow these steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+   ```bash
+   git clone https://github.com/udeepa-des/FloorManagementApp.git
+   cd FloorManagementApp
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Install the dependencies:
 
-### `npm run build`
+    npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Running the Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After the dependencies are installed, you can run the application with the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm start
 
-### `npm run eject`
+This will start the development server and open the application in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To build the application for production, use:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm run build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Validating the Use of Chosen Libraries and Tools
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The following libraries and tools were chosen for this application to ensure scalability, maintainability, and efficient development:
+Libraries:
 
-## Learn More
+    @dnd-kit/core and @dnd-kit/utilities:
+        These libraries are used for implementing drag-and-drop functionality in the floor management system.
+        Why it was chosen: It provides a flexible and highly customizable API for handling drag-and-drop, making it suitable for our use case of arranging tables on a floor.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Formik and Yup:
+        Formik is used for managing form state, and Yup is used for schema validation.
+        Why it was chosen: Together, they simplify form handling and validation, reducing the boilerplate code required for managing forms.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    React-Redux and @reduxjs/toolkit:
+        React-Redux is used for managing global state, and Redux Toolkit simplifies the process of writing Redux logic.
+        Why it was chosen: Redux Toolkit offers an easy-to-use API for managing state, with built-in features like thunk middleware for async operations, making state management seamless and efficient.
+
+    React-Toastify:
+        This library is used for displaying toast notifications.
+        Why it was chosen: React-Toastify provides an easy and customizable way to display non-blocking notifications, making it ideal for alerting users of system status.
+
+    Tailwind CSS:
+        A utility-first CSS framework used for styling the application.
+        Why it was chosen: Tailwind's utility-first approach makes it easy to rapidly prototype and create responsive, customizable UIs with minimal custom CSS.
+
+    Lucide-react:
+        Used for providing icon components.
+        Why it was chosen: Lucide-react offers a wide range of high-quality icons that are easy to integrate into the application.
+
+Tools:
+
+    React:
+        The core JavaScript library for building user interfaces.
+        Why it was chosen: React provides a declarative and component-based approach to building UIs, which enhances maintainability and scalability.
+
+    TypeScript:
+        Used for adding static types to JavaScript.
+        Why it was chosen: TypeScript helps catch errors during development and provides better tooling for developers through type safety, enhancing maintainability.
+
+    Tailwind CSS:
+        This utility-first CSS framework is used for styling the application.
+        Why it was chosen: Tailwind's flexibility allows us to quickly build responsive and well-designed interfaces without writing custom CSS.
+
+Technologies Used
+
+    React (version 18.3.1) for building the user interface.
+    TypeScript for type safety.
+    Tailwind CSS for styling.
+    Formik and Yup for handling forms and validation.
+    React-Redux and @reduxjs/toolkit for state management.
+    React-Toastify for displaying toast notifications.
+    Lucide-react for icons.
+    @dnd-kit for drag-and-drop functionality.
+
+Scripts
+
+The following npm scripts are available:
+
+    npm start: Starts the development server.
+    npm run build: Builds the application for production.
