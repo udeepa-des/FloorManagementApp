@@ -24,7 +24,7 @@ To get started with the application, follow these steps:
 
     npm install
 
-Running the Application
+## Running the Application
 
 After the dependencies are installed, you can run the application with the following command:
 
@@ -36,7 +36,7 @@ To build the application for production, use:
 
 npm run build
 
-Validating the Use of Chosen Libraries and Tools
+## Validating the Use of Chosen Libraries and Tools
 
 The following libraries and tools were chosen for this application to ensure scalability, maintainability, and efficient development:
 Libraries:
@@ -79,7 +79,7 @@ Tools:
         This utility-first CSS framework is used for styling the application.
         Why it was chosen: Tailwind's flexibility allows us to quickly build responsive and well-designed interfaces without writing custom CSS.
 
-Technologies Used
+## Technologies Used
 
     React (version 18.3.1) for building the user interface.
     TypeScript for type safety.
@@ -90,7 +90,7 @@ Technologies Used
     Lucide-react for icons.
     @dnd-kit for drag-and-drop functionality.
 
-Scripts
+## Scripts
 
 The following npm scripts are available:
 
